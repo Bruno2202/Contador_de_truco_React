@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@keyframes opacity-FadeIn {
+  from {
+    opacity: 0%;
+  } 
+
+  to {
+    opacity: 100%;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.opacityFadeOut {
+  opacity: 0; 
+  transition: opacity 0.1s ease-out; 
+}
+
+:root {
+  --background-color: #282A3A;
+  --box-shadow-default: rgb(0, 0, 0) 0px 20px 30px -10px;
+  --border-radius-default: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face{
+  font-family: 'Cartos';
+  src: url(fonts/Cartos.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Lexend';
+  src: url(fonts/Lexend-ExtraLight.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
 }

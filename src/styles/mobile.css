@@ -1,0 +1,81 @@
+@media only screen and (max-width: 600px){
+    .App {
+        padding: 0px;
+        background-image: url(../assets/img/Img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .appTitleContent {
+        width: auto;
+        height: auto;
+        padding: 25px;
+        background: linear-gradient(180deg, rgba(0,0,0,1) 26%, rgba(49,20,24,0) 100%);
+    }
+
+    .appTitle {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
+    .changeTeamModal {
+        width: 80%;
+    }
+
+    .saveAndClose {
+        width: 60%;
+    }
+
+    .teamCards {
+        height: 80%;
+        gap: 5%;
+        justify-content: flex-start;
+    }
+
+    .teamScore {
+        box-shadow: var(--box-shadow-default);
+        background: linear-gradient(225deg, rgba(114,47,55,1) 36%, rgba(36,16,18,1) 100%);
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .calcButtons{
+        height: 100%;
+    }
+
+    .btn {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .pointsCounter {
+        font-size: 5rem;
+        font-weight: 800;
+    }
+
+    .teamSurname {
+        height: 50px;
+        word-break:break-all;
+    }
+
+    .winScreenModal {
+        width: auto;
+        margin: 5%;
+    }
+
+    .changeTeams {
+        display: flex;
+        height: 20%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnChangeTeams {
+        height: 30%;
+        width: auto;
+        padding: 10px 30px;
+    }
+}
